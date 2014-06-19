@@ -62,9 +62,3 @@ Logger/swap                       0%         0ms        24     2.625us
 ...
 ```
 
-``` ruby
-def index
-  puts "hello world"
-end
-```
-
