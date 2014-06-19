@@ -4,15 +4,11 @@
 
 ##How To Use
 
-Include the header,
+Include the header and define profile nodes wherever in your code.
 
-```
+```cpp
 #include "profiler.h"
-```
 
-and define profile nodes wherever in your code.
-
-```
 void LoggerBase::debug(const std::string& section, const char* format, ...)
 {
 	DEFINE_PROFILE("LoggerBase/debug");
@@ -23,7 +19,7 @@ void LoggerBase::debug(const std::string& section, const char* format, ...)
 }
 ```
 
-`DEFINE_PROFILE` macro automatically start to measure and ends with the scope link `scoped_ptr`.
+`DEFINE_PROFILE` macro automatically start to measure and ends with the scope.
 
 results will be print out to stdout after running you program
 
@@ -66,4 +62,9 @@ Logger/swap                       0%         0ms        24     2.625us
 ...
 ```
 
+``` ruby
+def index
+  puts "hello world"
+end
+```
 
