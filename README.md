@@ -19,9 +19,9 @@ void LoggerBase::debug(const std::string& section, const char* format, ...)
 }
 ```
 
-`DEFINE_PROFILE` macro automatically start to measure and ends with the scope.
+`DEFINE_PROFILE` macro will automatically start to measure and ends with the scope.
 
-results will be print out to stdout after running you program
+results will be print out to stdout after your program running.
 
 ```
 $ ./a.out
@@ -35,7 +35,7 @@ Logger/swap                       0%         0ms        48     2.916us
 $
 ```
 
-if you set `RUNTIME_PROFILING` environment variable while running your program, you can get the result every seconds.
+If you set `RUNTIME_PROFILING` environment variable while running your program, you can get results every seconds.
 
 ```
 $ export RUNTIME_PROFILING=true
