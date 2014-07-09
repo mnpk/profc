@@ -1,8 +1,10 @@
 #profc
 
-`profc` is a simple, light weight performance profiler written in c++.
+**profc** is a simple, light weight performance profiler written in c++.
 
 ##Example
+
+Simply add `PROFC_NODE` macro into your code.
 
 ```c++
 #include "profc.h"
@@ -19,9 +21,9 @@ int main() {
 }
 ```
 
-`PROFC_NODE` macro will automatically start to measure and ends with the scope.
+The macro will automatically start to measure and ends with the scope.
 
-results will be print out to stdout after your program running.
+Results will be print out to stdout after your program running.
 
 ```
 $ ./a.out
