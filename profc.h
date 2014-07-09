@@ -21,7 +21,6 @@ class ProfileNode {
     the_lock_.unlock();
   }
   void Print() {
-    // printf("Node[%s]: count[%d], elapsed[%d]us\n", name_.c_str(), count_, elapsed_us_.count());
     printf("%-25s %10d %10dms %10dus\n",
         name_.c_str(),
         count_,
