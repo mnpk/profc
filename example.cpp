@@ -15,3 +15,4 @@ int main() {
   Bar();
   return 0;
 }
+
