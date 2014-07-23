@@ -7,6 +7,7 @@
 Simply add `PROFC_NODE` macro into your code.
 
 ```c++
+#include <thread>
 #include "profc.h"
 
 void Foo() {
@@ -30,5 +31,7 @@ $ ./a.out
 --------------------------------------------------------------
 name                           count      elapsed      us/call
 Foo                                2          2ms       1102us
+
+$
 ```
 
